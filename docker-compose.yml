@@ -1,0 +1,11 @@
+version: "3.6"
+
+services:
+  ansible:
+    image: cepharum/ansible
+    build: .
+    volumes:
+      - ansible:/etc/ansible
+
+volumes:
+  ansible:
